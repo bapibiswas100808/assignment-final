@@ -1,0 +1,421 @@
+/*
+Google Fonts
+open-sans: font-family: 'Open Sans', sans-serif;
+roboto: font-family: 'Roboto', sans-serif;
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500&family=Roboto:wght@700;900&display=swap');
+
+/*
+Base CSS
+*/
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/*Basic CSS*/
+
+a{
+    font-weight: 500;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+}
+
+body{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 1.6;
+    background-color: #EEEFF1;
+}
+.section-heading{
+    margin-bottom: 40px;
+}
+.section-heading h1{
+    font-size: 50px;
+    text-transform: capitalize;
+}
+
+.section-heading h2{
+    font-size: 36px;
+    color: white;
+    text-transform: capitalize;
+}
+
+/*Header Area CSS*/
+
+.header-area{
+    padding: 30px 40px;
+}
+/*.header-content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}*/
+.header-content{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+.header-content img{
+    height: 30px;
+    display: inline-block;
+}
+.logo{
+    display: flex;
+    align-items: center;
+}
+.logo h3{
+    text-transform: capitalize;
+}
+.logo img{
+    padding-right: 20px;
+}
+.menu-icon{
+    display: none;
+}
+.menu-icon img{
+    height: 15px;
+}
+.icon{
+    padding: 15px;
+    background-color: #2f4a7f;
+}
+.main-menu{
+    text-align: right;
+}
+
+.main-menu a{
+    display: inline-block;
+    text-decoration: none;
+    text-transform: capitalize;
+    padding-left: 20px;
+    color: black;
+}
+.main-menu button{
+    margin-left: 20px;
+    display: inline-block;
+    padding: 10px;
+    color: white;
+    background-color: black;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.main-menu button:hover{
+    color: blue;
+    background-color: aqua;
+}
+
+/*Hero area CSS*/
+.container2{
+    padding: 0 15%;
+}
+.hero-content{
+    display: flex;
+    align-items: center;
+    margin-bottom: 150px;
+}
+.hero-content img{
+    height: 400px;
+    padding-right: 50px;
+    border-radius: 10px;
+}
+.hero-text h1{
+    font-size: 70px;
+}
+
+/*About area CSS*/
+.container3{
+    padding: 0 15%;
+}
+.about-content{
+    display: flex;
+    align-items: center;
+    margin-bottom: 150px;
+}
+.about-text{
+    flex: 1;
+    padding-right: 100px;
+}
+.about-text h1{
+    font-size: 40px;
+}
+.about-work{
+    flex: 1;
+}
+.about-work{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 30px;
+}
+.single-service{
+    border: solid 1px rgb(122, 122, 122);
+    border-radius: 20px;
+    text-transform: uppercase;
+    padding: 5px;
+    font-size: 13px;
+    background-color: white;
+    font-weight: 500;
+    text-align: center;
+}
+/*Service area CSS*/
+.container4{
+    padding: 0 15%;
+}
+.service-content{
+    display: flex;
+}
+.service-content img{
+    height: 150px;
+    border-radius: 50%;
+
+}
+.service-image p{
+    font-size: 13px;
+    font-weight: 500;
+}
+.service-text{
+    margin-left: 100px;
+}
+
+/*Contact area CSS*/
+.container5{
+    padding: 0 15%;
+}
+.contact-content{
+    display: flex;
+    border: solid 1px black;
+    border-radius: 5px;
+    margin-top: 100px;
+    padding: 60px;
+}
+
+.contact-text{
+    flex: 1;
+}
+.contact-form{
+    flex: 1;
+}
+.contact-text h1{
+    font-size: 50px;
+}
+.contact-form form{
+    display: grid;
+    gap: 30px;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-areas:
+            "n e"
+            "m m"
+}
+#name{
+    grid-area: n;
+}
+#email{
+    grid-area: e;
+}
+#message{
+    grid-area: m;
+}
+
+.contact-form input{
+    display: inline-block;
+    padding: 15px;
+    border-radius: 10px;
+}
+.contact-form textarea{
+    font-size: 17px;
+    font-family: 'Open Sans', sans-serif;
+    border-radius: 10px;
+}
+.contact-form button{
+    padding: 15px 0;
+    background-color: black;
+    color: white;
+    font-size: 15px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.contact-form button:hover{
+    color: blue;
+    background-color: rgb(33, 161, 196);
+}
+
+/*connection area CSS*/
+.container6{
+    padding: 0 15%;
+}
+.connection-content{
+    margin-top: 150px;
+    display: flex;
+    justify-content: space-between;
+}
+.connection-content img{
+    height: 30px;
+}
+.connection-link a{
+    text-decoration: none;
+    padding-left: 20px;
+    color: rgb(61, 61, 61);
+    transition: 0.5s;
+}
+.connection-link a:hover{
+    color: blue;
+}
+
+/*Footer area CSS*/
+footer{
+    margin-top: 30px;
+    padding: 40px 0;
+    text-align: center;
+    font-size: 15px;
+}
+
+@media only screen and (max-width: 1199px){
+ /*Header area*/
+    .container1{
+        padding: 0 10%;
+    }
+    .navigation{
+        padding-left: 150px;
+    }
+ 
+}
+
+@media only screen and (max-width: 1099px){
+ /*Header area*/
+    .container1{
+        padding: 0 10%;
+    }
+    .navigation{
+        padding-left: 100px;
+    }
+}
+
+@media only screen and (max-width: 991px){
+
+/*Header area*/
+    .container1{
+        padding: 0 10%;
+    }
+    .header-content{
+        grid-template-areas: 
+                "l i"
+                "m m"
+                "s s";
+                gap: 5px;
+    }
+    .logo{
+        grid-area: l;
+    }
+    .menu-icon{
+        grid-area: i;
+        justify-self: end;
+        display: block;
+        cursor: pointer;
+    }
+    .navigation{
+        grid-area: m;
+        padding-left: 0;
+        text-align: center;
+        display: none;
+    }
+    .main-menu{
+        text-align: center;
+    }
+    .main-menu a{
+        display: block;
+        font-weight: 500px;
+        padding: 10px;
+        background-color: #2f4a7f;
+        color: #EEEFF1;
+    }
+    .navigation.show-menu{
+        display: block;
+    }
+    .main-menu button{
+        grid-area: s;
+        margin-top: 10px;
+        font-size: 18px;
+        margin-left: 0;
+    }
+  
+    .hero-text h1{
+        font-size: 30px;
+    }
+    .about-text h1{
+        font-size: 25px;
+    }
+
+/*hero area*/
+    .hero-content{
+    flex-direction: column;
+    margin-bottom: 50px;
+    }
+    .hero-image img{
+    width: 100%;
+    margin-bottom: 15px;
+    }
+
+/*About area*/
+    .about-content{
+    flex-direction: column;
+    }
+    .about-text{
+    padding-right: 0;
+    margin-bottom: 20px;
+    }
+
+/*cotact area*/
+    .contact-content{
+    flex-direction: column;
+    padding: 20px;
+    }
+    .contact-content form{
+    text-align: center;
+    }
+    }
+
+@media only screen and (max-width: 575px){
+
+/*service area*/
+
+    .service-content{
+    flex-direction: column;
+    align-items: center;
+    }
+
+    .section-heading h1{
+    font-size: 30px;
+    text-align: center;
+    }
+    .service-text{
+    margin-left: 0;
+    text-align: center;
+    }
+
+/*contact area*/
+
+    .contact-text h1{
+    font-size: 20px;
+    }
+    .contact-content form{
+    display: grid;
+    grid-template-areas: 
+        "n n"
+        "e e"
+        "m m";
+    }
+    }
